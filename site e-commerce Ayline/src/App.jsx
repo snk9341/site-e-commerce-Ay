@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Logo from './assets/logo-lumiere.png'
+import './style.css'
 
 function App() {
 
   return (
     <>
-      <h1>wesh</h1>
+      <header id='header-page'>
+        <div id='header-div'>
+          <img src={Logo} alt="logo Lumière&Foi" />
+        </div>
+      </header>
     </>
   )
 }
