@@ -1,0 +1,8 @@
+:root {
+    --background-main : linear-gradient(rgb(252, 173, 186), rgb(255, 210, 218));
+    --button-main : rgb(255, 128, 149);
+    --button-hover-main : rgb(255, 76, 106);
+
+    --main-size-landscape : 90vw;
+    --main-size-portrait : 100vw;
+}
