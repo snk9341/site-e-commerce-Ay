@@ -1,5 +1,5 @@
-import Logo from './assets/logo-lumiere.png'
-import Name from './assets/name-lumiere.png'
+import Logo from '/src/assets/logo-lumiere.png'
+import Name from '/src/assets/name-lumiere.png'
 
 export default function Header() {
     return (
@@ -13,7 +13,7 @@ export default function Header() {
               </span>
             </button> 
           </div>
-          <img src={Name} alt="logo Lumière&Foi" />
+          <img src={""} alt="logo" />
           <div className="button-menu">
             <button>
               <span className="material-symbols-outlined">

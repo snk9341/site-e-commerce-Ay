@@ -1,0 +1,21 @@
+@media (orientation: portrait) {
+    #header-page {
+        width: var(--main-size-portrait);
+        #header-div {
+            img {
+                width: 40%;
+            }
+            .button-menu {
+                button {
+                    width: 100%;
+                    aspect-ratio: 1;
+                    border-radius: 40%;
+                    border: none;
+                    filter: opacity(1);
+                    background: var(--button-main);
+                    color: white;
+                }
+            }
+        }
+    }
+}
