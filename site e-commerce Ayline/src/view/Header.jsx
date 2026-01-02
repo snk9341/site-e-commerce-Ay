@@ -13,7 +13,7 @@ export default function Header() {
               </span>
             </button> 
           </div>
-          <img src={""} alt="logo" />
+          <img src={Name} alt="logo" />
           <div className="button-menu">
             <button>
               <span className="material-symbols-outlined">
