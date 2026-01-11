@@ -1,10 +1,12 @@
 @media (orientation: portrait) {
     #header-page {
         width: var(--main-size-portrait);
+
         #header-div {
             img {
                 width: 40%;
             }
+
             .button-menu {
                 button {
                     width: 100%;
@@ -16,6 +18,69 @@
                     color: white;
                 }
             }
+        }
+    }
+
+    #carousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+        }
+
+        div {
+            width: 80%;
+        }
+
+        #left-img {
+            display: none;
+        }
+
+        #right-img {
+            display: none;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+
+            span {
+                font-size: 5em;
+                color: white;
+            }
+        }
+
+        h4 {
+            position: absolute;
+            color: white;
+            top: 65%;
+            left: 0;
+            right: 0;
+            bottom: 0%;
+            text-align: start;
+            padding-top: 5%;
+            padding-left: 5%;
+            font-size: 2em;
+            width: 95%;
+            margin: auto;
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.85),
+                    transparent);
+        }
+
+        p {
+            position: absolute;
+            color: white;
+            top: 75%;
+            left: 0;
+            right: 0;
+            bottom: 0%;
+            padding-top: 13%;
+            padding-left: 5%;
+            width: 95%;
         }
     }
 }

@@ -1,10 +1,13 @@
 .carousel {
     width: 100%;
     margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background: rgba(0, 0, 0, 0.1);
 
     div {
         width: 25%;
@@ -16,22 +19,23 @@
         object-fit: cover;
         width: 100%;
         height: 100%;
+            border-radius: 15px;
     }
 
     #left-img {
         width: 20%;
         height: 95%;
         margin: auto;
-        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
     }
 
     #right-img {
         width: 20%;
         height: 95%;
         margin: auto;
-        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
     }
 
     button {
@@ -48,16 +52,31 @@
     h4 {
         position: absolute;
         color: white;
-        top: 90%;
+        top: 80%;
         left: 0;
         right: 0;
-        text-align: center;
-        width: 20%;
+        bottom: 0%;
+        text-align: start;
+        padding-top: 5%;
+        padding-left: 5%;
+        font-size: 1.5em;
+        width: 95%;
         margin: auto;
-        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.85),
+                transparent);
+            border-radius: 15px;
     }
 
-    #carouselLeft {}
-
-    #carouselRight {}
+    p {
+        position: absolute;
+        color: white;
+        top: 80%;
+        left: 0;
+        right: 0;
+        bottom: 0%;
+        padding-top: 15%;
+        padding-left: 5%;
+        width: 95%;
+    }
 }

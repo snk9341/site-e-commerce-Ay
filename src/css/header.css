@@ -1,5 +1,5 @@
 #header-page {
-        width: var(--header-size-landscape);
+        width: 90%;
         height: 10vh;
 
         margin: auto;

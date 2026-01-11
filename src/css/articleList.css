@@ -1,0 +1,45 @@
+#listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 5vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+
+    .card {
+        width: 28%;
+        height: fit-content;
+        padding-bottom: 1%;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        color: inherit;
+
+
+        .imgArticle {
+            h4 {
+                color: black;
+                padding-left: 5%;
+                font-size: 1.5em;
+                width: 95%;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            img {
+                border-radius: 15px;
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+        }
+        p {
+            color: black;
+            padding-top: 3%;
+            padding-left: 5%;
+        }
+    }
+}

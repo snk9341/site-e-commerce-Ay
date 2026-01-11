@@ -1,26 +1,11 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import { useInterval } from "usehooks-ts";
 
-function Carousels() {
+function Carousels({infoArticle}) {
 
-  const [infoArticle, setInfoArticle] = useState([]);
-  const [indexCarousel, setIndexCarousel] = useState(0);
   const [leftImg, setLeftImage] = useState(0);
   const [centerImg, setcenterImg] = useState(1);
   const [rightImg, setrightImg] = useState(2);
-
-  const getArticle = function () {
-    fetch("/produit.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setInfoArticle(data);
-      });
-  };
-
-  useEffect(() => {
-    getArticle();
-  }, []);
 
   const Leftrotation = (e) => {
     if (e == 1 && leftImg + 1 > infoArticle.length - 1) {
@@ -64,10 +49,10 @@ function Carousels() {
     }
     , 5000)
 
-
+    
   if (infoArticle.length > 0) {
     return (
-      <div className="carousel">
+      <div className="carousel" id="carousel">
         <button id="carouselRight" onClick={(e) => { globalRotation(1) }}>
           <span className="material-symbols-outlined">
             chevron_left
@@ -80,6 +65,7 @@ function Carousels() {
         <div>
           <img src={infoArticle[centerImg].image} alt="" />
           <h4>{infoArticle[centerImg].name}</h4>
+          <p>{infoArticle[centerImg].desc}</p>
         </div>
         <div id="right-img">
           <img src={infoArticle[rightImg].image} alt="" />

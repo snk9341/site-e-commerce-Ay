@@ -1,20 +1,26 @@
 [
     {
         "name": "produit 1",
+        "desc": "très joli bracelet bleuté avec des reflets argents",
         "prix": "19,99",
         "image": "/src/assets/test-article/test1.png",
+        "lien": "https://www.vinted.fr/items/7917797130-avatar-ps5?referrer=catalog",
         "id": 1
     },
     {
         "name": "produit 2",
+        "desc": "très joli bracelet bleuté avec des reflets argents",
         "prix": "19,99",
         "image": "/src/assets/test-article/test2.png",
+        "lien": "https://www.vinted.fr/items/7917797130-avatar-ps5?referrer=catalog",
         "id": 2
     },
     {
         "name": "produit 3",
+        "desc": "très joli bracelet bleuté avec des reflets argents",
         "prix": "19,99",
         "image": "/src/assets/test-article/test3.png",
+        "lien": "https://www.vinted.fr/items/7917797130-avatar-ps5?referrer=catalog",
         "id": 3
     }
 ]
